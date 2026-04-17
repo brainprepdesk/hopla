@@ -8,10 +8,10 @@
 <meta property="og:url" content="https:///github.com.github.io/auto_examples/plot_ccc_joblib_multi_tasks.html" />
 <meta property="og:site_name" content="hopla" />
 <meta property="og:description" content="CCC-based cluster - joblib When you’re running hundreds or thousands of jobs, automation is a necessity. This is where hopla can help you. A simple example of how to use hopla on a CCC cluster. Ple..." />
-<meta property="og:image" content="https:/github.com.github.io/AGrigis/_static/hopla-logo.png" />
+<meta property="og:image" content="https:/github.com.github.io/brainprepdesk/_static/hopla-logo.png" />
 <meta property="og:image:alt" content="hopla" />
 <meta name="description" content="CCC-based cluster - joblib When you’re running hundreds or thousands of jobs, automation is a necessity. This is where hopla can help you. A simple example of how to use hopla on a CCC cluster. Ple..." />
-<link rel="search" title="Search" href="../search.html" /><link rel="next" title="Basic example on how to use the CCC cluster using multi-tasks" href="plot_ccc_flux_multi_tasks.html" /><link rel="prev" title="Basic example on how to use the CCC cluster" href="plot_ccc.html" />
+<link rel="search" title="Search" href="../search.html" /><link rel="next" title="Basic example on how to use the PBS cluster" href="plot_pbs.html" /><link rel="prev" title="Basic example on how to use the CCC cluster using multi-tasks" href="plot_ccc_oneshot_multi_tasks.html" />
         <link rel="prefetch" href="../_static/hopla-transparent.png" as="image" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2025.07.19 -->
@@ -234,9 +234,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc.html">Basic example on how to use the CCC cluster</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_pbs.html">Basic example on how to use the PBS cluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_slurm.html">Basic example on how to use the SLURM cluster</a></li>
 </ul>
@@ -327,12 +327,12 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/AGrigis/hopla/blob/main/doc/auto_examples/plot_ccc_joblib_multi_tasks.rst?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/brainprepdesk/hopla/blob/main/doc/auto_examples/plot_ccc_joblib_multi_tasks.rst?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/AGrigis/hopla/edit/main/doc/auto_examples/plot_ccc_joblib_multi_tasks.rst" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/brainprepdesk/hopla/edit/main/doc/auto_examples/plot_ccc_joblib_multi_tasks.rst" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
@@ -451,15 +451,15 @@ functionalities.</p>
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 256, in import_image
    |    stdout = subprocess.check_output(cmd)
    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
    |    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
    |    with Popen(*popenargs, **kwargs) as process:
    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
    |    self._execute_child(args, executable, preexec_fn, close_fds,
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
    |    raise child_exception_type(errno_num, err_msg, err_filename)
    |FileNotFoundError: [Errno 2] No such file or directory: &#39;pcocc-rs&#39;
 
@@ -590,21 +590,21 @@ available.</p>
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 256, in import_image
    |    stdout = subprocess.check_output(cmd)
    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
    |    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
    |    with Popen(*popenargs, **kwargs) as process:
    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
    |    self._execute_child(args, executable, preexec_fn, close_fds,
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
    |    raise child_exception_type(errno_num, err_msg, err_filename)
    |FileNotFoundError: [Errno 2] No such file or directory: &#39;pcocc-rs&#39;
 
 [command] ccc_msub /tmp/hopla/submissions/1_submission.sh
 
-CCC_MSUB:  33%|███▎      | 1/3 [00:00&lt;00:00, 233.55it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can&#39;t import image: /tmp/hopla/my-docker-img.tar
+CCC_MSUB:  33%|███▎      | 1/3 [00:00&lt;00:00, 244.91it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can&#39;t import image: /tmp/hopla/my-docker-img.tar
   self.generate_batch()
    |Traceback (most recent call last):
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 152, in generate_batch
@@ -612,21 +612,21 @@ CCC_MSUB:  33%|███▎      | 1/3 [00:00&lt;00:00, 233.55it/s]/home/runner/
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 256, in import_image
    |    stdout = subprocess.check_output(cmd)
    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
    |    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
    |    with Popen(*popenargs, **kwargs) as process:
    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
    |    self._execute_child(args, executable, preexec_fn, close_fds,
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
    |    raise child_exception_type(errno_num, err_msg, err_filename)
    |FileNotFoundError: [Errno 2] No such file or directory: &#39;pcocc-rs&#39;
 
 [command] ccc_msub /tmp/hopla/submissions/2_submission.sh
 
-CCC_MSUB:  67%|██████▋   | 2/3 [00:00&lt;00:00, 272.06it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can&#39;t import image: /tmp/hopla/my-docker-img.tar
+CCC_MSUB:  67%|██████▋   | 2/3 [00:00&lt;00:00, 299.88it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can&#39;t import image: /tmp/hopla/my-docker-img.tar
   self.generate_batch()
    |Traceback (most recent call last):
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 152, in generate_batch
@@ -634,15 +634,15 @@ CCC_MSUB:  67%|██████▋   | 2/3 [00:00&lt;00:00, 272.06it/s]/home/r
    |  File &quot;/home/runner/work/hopla/hopla/doc/../hopla/ccc.py&quot;, line 256, in import_image
    |    stdout = subprocess.check_output(cmd)
    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 466, in check_output
    |    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 548, in run
    |    with Popen(*popenargs, **kwargs) as process:
    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1026, in __init__
    |    self._execute_child(args, executable, preexec_fn, close_fds,
-   |  File &quot;/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
+   |  File &quot;/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/subprocess.py&quot;, line 1955, in _execute_child
    |    raise child_exception_type(errno_num, err_msg, err_filename)
    |FileNotFoundError: [Errno 2] No such file or directory: &#39;pcocc-rs&#39;
 
@@ -668,8 +668,8 @@ DelayedCCCJob&lt;job_id=3&gt;stdout: none
 DelayedCCCJob&lt;job_id=3&gt;stderr: none
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.257 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  109 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.268 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  112 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-ccc-joblib-multi-tasks-py">
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/8a5c17174a2d1af49a7ff4d933498d49/plot_ccc_joblib_multi_tasks.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_ccc_joblib_multi_tasks.ipynb</span></code></a></p>
@@ -690,23 +690,23 @@ DelayedCCCJob&lt;job_id=3&gt;stderr: none
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="plot_ccc_flux_multi_tasks.html">
+          <a class="next-page" href="plot_pbs.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Basic example on how to use the CCC cluster using multi-tasks</div>
+                <div class="title">Basic example on how to use the PBS cluster</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="plot_ccc.html">
+          <a class="prev-page" href="plot_ccc_oneshot_multi_tasks.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Basic example on how to use the CCC cluster</div>
+                <div class="title">Basic example on how to use the CCC cluster using multi-tasks</div>
                 
               </div>
             </a>
@@ -723,7 +723,7 @@ DelayedCCCJob&lt;job_id=3&gt;stderr: none
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/AGrigis/hopla" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/brainprepdesk/hopla" aria-label="GitHub"></a>
               
             </div>
           </div>

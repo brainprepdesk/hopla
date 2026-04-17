@@ -236,8 +236,8 @@ available.
  .. code-block:: none
 
     QSUB:   0%|          | 0/10 [00:00<?, ?it/s][command] qsub /tmp/hopla/submissions/1_submission.sh
-    QSUB:  10%|█         | 1/10 [00:00<00:00, 1335.77it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
-    QSUB:  20%|██        | 2/10 [00:00<00:00, 1545.72it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
+    QSUB:  10%|█         | 1/10 [00:00<00:00, 1203.88it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
+    QSUB:  20%|██        | 2/10 [00:00<00:00, 1437.88it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
     QSUB:  30%|███       | 3/10 [00:03<00:07,  1.00s/it]      QSUB:  30%|███       | 3/10 [00:03<00:07,  1.00s/it][command] qsub /tmp/hopla/submissions/4_submission.sh
     QSUB:  40%|████      | 4/10 [00:03<00:06,  1.00s/it][command] qsub /tmp/hopla/submissions/5_submission.sh
     QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.24s/it]    QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.24s/it][command] qsub /tmp/hopla/submissions/6_submission.sh
@@ -303,9 +303,9 @@ available.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.254 seconds)
+   **Total running time of the script:** (0 minutes 15.298 seconds)
 
-**Estimated memory usage:**  109 MB
+**Estimated memory usage:**  112 MB
 
 
 .. _sphx_glr_download_auto_examples_plot_pbs.py:
