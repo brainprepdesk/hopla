@@ -8,7 +8,7 @@
 <meta property="og:url" content="https:///github.com.github.io/auto_examples/plot_slurm.html" />
 <meta property="og:site_name" content="hopla" />
 <meta property="og:description" content="CCC-based cluster - SLURM When you’re running hundreds or thousands of jobs, automation is a necessity. This is where hopla can help you. A simple example of how to use hopla on a SLURM cluster. Pl..." />
-<meta property="og:image" content="https:/github.com.github.io/AGrigis/_static/hopla-logo.png" />
+<meta property="og:image" content="https:/github.com.github.io/brainprepdesk/_static/hopla-logo.png" />
 <meta property="og:image:alt" content="hopla" />
 <meta name="description" content="CCC-based cluster - SLURM When you’re running hundreds or thousands of jobs, automation is a necessity. This is where hopla can help you. A simple example of how to use hopla on a SLURM cluster. Pl..." />
 <link rel="search" title="Search" href="../search.html" /><link rel="next" title="User guide" href="../user_guide/index.html" /><link rel="prev" title="Basic example on how to use the PBS cluster" href="plot_pbs.html" />
@@ -234,9 +234,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc.html">Basic example on how to use the CCC cluster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plot_ccc_joblib_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_ccc_joblib_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_pbs.html">Basic example on how to use the PBS cluster</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Basic example on how to use the SLURM cluster</a></li>
 </ul>
@@ -327,12 +327,12 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/AGrigis/hopla/blob/main/doc/auto_examples/plot_slurm.rst?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/brainprepdesk/hopla/blob/main/doc/auto_examples/plot_slurm.rst?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/AGrigis/hopla/edit/main/doc/auto_examples/plot_slurm.rst" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/brainprepdesk/hopla/edit/main/doc/auto_examples/plot_slurm.rst" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
@@ -504,9 +504,9 @@ available.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>SBATCH:   0%|          | 0/10 [00:00&lt;?, ?it/s][command] sbatch /tmp/hopla/submissions/1_submission.sh
 
-SBATCH:  10%|█         | 1/10 [00:00&lt;00:00, 1328.99it/s][command] sbatch /tmp/hopla/submissions/2_submission.sh
+SBATCH:  10%|█         | 1/10 [00:00&lt;00:00, 1158.01it/s][command] sbatch /tmp/hopla/submissions/2_submission.sh
 
-SBATCH:  20%|██        | 2/10 [00:00&lt;00:00, 1451.07it/s][command] sbatch /tmp/hopla/submissions/3_submission.sh
+SBATCH:  20%|██        | 2/10 [00:00&lt;00:00, 1314.83it/s][command] sbatch /tmp/hopla/submissions/3_submission.sh
 
 SBATCH:  30%|███       | 3/10 [00:03&lt;00:07,  1.00s/it]
 SBATCH:  30%|███       | 3/10 [00:03&lt;00:07,  1.00s/it][command] sbatch /tmp/hopla/submissions/4_submission.sh
@@ -580,8 +580,8 @@ DelayedSlurmJob&lt;job_id=10&gt;stdout: none
 DelayedSlurmJob&lt;job_id=10&gt;stderr: none
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.262 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  109 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.240 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  112 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-slurm-py">
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/e437f7758807cd0e107be941048f6966/plot_slurm.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_slurm.ipynb</span></code></a></p>
@@ -635,7 +635,7 @@ DelayedSlurmJob&lt;job_id=10&gt;stderr: none
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/AGrigis/hopla" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/brainprepdesk/hopla" aria-label="GitHub"></a>
               
             </div>
           </div>
