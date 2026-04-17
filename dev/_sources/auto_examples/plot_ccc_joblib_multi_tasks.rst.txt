@@ -347,7 +347,7 @@ available.
        |FileNotFoundError: [Errno 2] No such file or directory: 'pcocc-rs'
 
     [command] ccc_msub /tmp/hopla/submissions/1_submission.sh
-    CCC_MSUB:  33%|███▎      | 1/3 [00:00<00:00, 222.45it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can't import image: /tmp/hopla/my-docker-img.tar
+    CCC_MSUB:  33%|███▎      | 1/3 [00:00<00:00, 21.85it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can't import image: /tmp/hopla/my-docker-img.tar
       self.generate_batch()
        |Traceback (most recent call last):
        |  File "/home/runner/work/hopla/hopla/doc/../hopla/ccc.py", line 152, in generate_batch
@@ -368,7 +368,7 @@ available.
        |FileNotFoundError: [Errno 2] No such file or directory: 'pcocc-rs'
 
     [command] ccc_msub /tmp/hopla/submissions/2_submission.sh
-    CCC_MSUB:  67%|██████▋   | 2/3 [00:00<00:00, 260.96it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can't import image: /tmp/hopla/my-docker-img.tar
+    CCC_MSUB:  67%|██████▋   | 2/3 [00:00<00:00, 41.71it/s]/home/runner/work/hopla/hopla/doc/../hopla/utils.py:372: UserWarning: Can't import image: /tmp/hopla/my-docker-img.tar
       self.generate_batch()
        |Traceback (most recent call last):
        |  File "/home/runner/work/hopla/hopla/doc/../hopla/ccc.py", line 152, in generate_batch
@@ -389,7 +389,7 @@ available.
        |FileNotFoundError: [Errno 2] No such file or directory: 'pcocc-rs'
 
     [command] ccc_msub /tmp/hopla/submissions/3_submission.sh
-    CCC_MSUB: 100%|██████████| 3/3 [00:03<00:00,  1.00s/it]     CCC_MSUB: 100%|██████████| 3/3 [00:03<00:00,  1.00s/it]    CCC_MSUB: 100%|██████████| 3/3 [00:06<00:00,  2.00s/it]
+    CCC_MSUB: 100%|██████████| 3/3 [00:03<00:00,  1.02s/it]    CCC_MSUB: 100%|██████████| 3/3 [00:03<00:00,  1.02s/it]    CCC_MSUB: 100%|██████████| 3/3 [00:06<00:00,  2.02s/it]
     ----------------------------------------
     DelayedCCCJob<job_id=1>exitcode: failure
     DelayedCCCJob<job_id=1>submission: /tmp/hopla/submissions/1_submission.sh
@@ -412,9 +412,9 @@ available.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 6.263 seconds)
+   **Total running time of the script:** (0 minutes 6.254 seconds)
 
-**Estimated memory usage:**  112 MB
+**Estimated memory usage:**  110 MB
 
 
 .. _sphx_glr_download_auto_examples_plot_ccc_joblib_multi_tasks.py:
