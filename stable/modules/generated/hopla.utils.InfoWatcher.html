@@ -359,7 +359,7 @@ signature, and not how to use it. Please refer to the
 <h1>hopla.utils.InfoWatcher<a class="headerlink" href="#hopla-utils-infowatcher" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hopla.utils.</span></span><span class="sig-name descname"><span class="pre">InfoWatcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delay_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hopla.utils.</span></span><span class="sig-name descname"><span class="pre">InfoWatcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delay_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
 <p>An instance of this class is shared by all jobs, and is in charge of
 calling scheduler to check status for all jobs at once.</p>
@@ -373,18 +373,18 @@ calling scheduler to check status for all jobs at once.</p>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delay_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.__init__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delay_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.__init__" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.clear" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.clear" title="Link to this definition">¶</a></dt>
 <dd><p>Clears cache.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.get_info">
-<span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.get_info" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.get_info" title="Link to this definition">¶</a></dt>
 <dd><p>Returns a dict containing info about the job.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -404,7 +404,7 @@ calling scheduler to check status for all jobs at once.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.get_state">
-<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L183"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.get_state" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L183"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.get_state" title="Link to this definition">¶</a></dt>
 <dd><p>Returns the state of the job.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -424,7 +424,7 @@ calling scheduler to check status for all jobs at once.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.is_done">
-<span class="sig-name descname"><span class="pre">is_done</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.is_done" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">is_done</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.is_done" title="Link to this definition">¶</a></dt>
 <dd><p>Returns whether the job is finished.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -444,20 +444,20 @@ calling scheduler to check status for all jobs at once.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.read_info">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.read_info" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.read_info" title="Link to this definition">¶</a></dt>
 <dd><p>Reads the output of the update command and returns a dictionary
 containing main jobs information.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.register_job">
-<span class="sig-name descname"><span class="pre">register_job</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.register_job" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">register_job</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.register_job" title="Link to this definition">¶</a></dt>
 <dd><p>Register a job on the instance for shared update.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hopla.utils.InfoWatcher.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/9e91e0a/hopla/utils.py#L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.update" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/892fb2c/hopla/utils.py#L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.utils.InfoWatcher.update" title="Link to this definition">¶</a></dt>
 <dd><p>Updates the info of all registered jobs.</p>
 </dd></dl>
 

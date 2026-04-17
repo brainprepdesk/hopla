@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**01:04.756** total execution time for 6 files **from auto_examples**:
+**01:04.542** total execution time for 6 files **from auto_examples**:
 
 .. container::
 
@@ -33,20 +33,20 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_plot_ccc.py` (``plot_ccc.py``)
-     - 00:15.325
-     - 112.4
+     - 00:15.328
+     - 112.3
    * - :ref:`sphx_glr_auto_examples_plot_pbs.py` (``plot_pbs.py``)
-     - 00:15.298
+     - 00:15.239
      - 112.0
    * - :ref:`sphx_glr_auto_examples_plot_slurm.py` (``plot_slurm.py``)
-     - 00:15.271
-     - 112.0
-   * - :ref:`sphx_glr_auto_examples_plot_ccc_oneshot_multi_tasks.py` (``plot_ccc_oneshot_multi_tasks.py``)
-     - 00:06.310
+     - 00:15.239
      - 112.0
    * - :ref:`sphx_glr_auto_examples_plot_ccc_flux_multi_tasks.py` (``plot_ccc_flux_multi_tasks.py``)
-     - 00:06.284
-     - 112.1
+     - 00:06.247
+     - 112.0
    * - :ref:`sphx_glr_auto_examples_plot_ccc_joblib_multi_tasks.py` (``plot_ccc_joblib_multi_tasks.py``)
-     - 00:06.268
+     - 00:06.244
+     - 112.0
+   * - :ref:`sphx_glr_auto_examples_plot_ccc_oneshot_multi_tasks.py` (``plot_ccc_oneshot_multi_tasks.py``)
+     - 00:06.244
      - 112.0
