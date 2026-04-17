@@ -14,24 +14,24 @@
 
 **Development**
 
-.. image:: https://coveralls.io/repos/github/AGrigis/hopla/badge.svg
-    :target: https://coveralls.io/github/AGrigis/hopla
+.. image:: https://coveralls.io/repos/github/brainprepdesk/hopla/badge.svg
+    :target: https://coveralls.io/github/brainprepdesk/hopla
     :alt: Code Coverage
 
-.. image:: https://github.com/AGrigis/hopla/actions/workflows/pycodestyle.yml/badge.svg
-    :target: https://github.com/AGrigis/hopla/actions
+.. image:: https://github.com/brainprepdesk/hopla/actions/workflows/pycodestyle.yml/badge.svg
+    :target: https://github.com/brainprepdesk/hopla/actions
     :alt: Github Actions PyCodeStyle Linter Status
 
-.. image:: https://github.com/AGrigis/hopla/actions/workflows/ruff.yml/badge.svg
-    :target: https://github.com/AGrigis/hopla/actions
+.. image:: https://github.com/brainprepdesk/hopla/actions/workflows/ruff.yml/badge.svg
+    :target: https://github.com/brainprepdesk/hopla/actions
     :alt: Github Actions Ruff Linter Status
 
-.. image:: https://github.com/AGrigis/hopla/actions/workflows/testing.yml/badge.svg
-    :target: https://github.com/AGrigis/hopla/actions
+.. image:: https://github.com/brainprepdesk/hopla/actions/workflows/testing.yml/badge.svg
+    :target: https://github.com/brainprepdesk/hopla/actions
     :alt: Github Actions Testing Status
 
-.. image:: https://github.com/AGrigis/hopla/actions/workflows/documentation.yml/badge.svg
-    :target: https://github.com/AGrigis/hopla/actions
+.. image:: https://github.com/brainprepdesk/hopla/actions/workflows/documentation.yml/badge.svg
+    :target: https://github.com/brainprepdesk/hopla/actions
     :alt: Github Actions Documentation Build Status
 
 **Release**
@@ -55,9 +55,9 @@ different clusters. It basically wraps submission and provide access to logs.
 Important Links
 ===============
 
-- Official source code repo: https://github.com/AGrigis/hopla
-- HTML documentation (stable release): http://AGrigis.github.io/hopla/stable
-- HTML documentation (dev): http://AGrigis.github.io/hopla/dev
+- Official source code repo: https://github.com/brainprepdesk/hopla
+- HTML documentation (stable release): http://brainprepdesk.github.io/hopla/stable
+- HTML documentation (dev): http://brainprepdesk.github.io/hopla/dev
 
 
 Install
@@ -115,4 +115,4 @@ Dependencies
 ============
 
 The required dependencies to use the software are listed
-in the file `pyproject.toml <https://github.com/AGrigis/hopla/blob/master/pyproject.toml>`_.
+in the file `pyproject.toml <https://github.com/brainprepdesk/hopla/blob/master/pyproject.toml>`_.

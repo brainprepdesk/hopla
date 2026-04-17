@@ -27,9 +27,9 @@ dynamic = ["version"]
 hoplacli = "hopla.cli:main"
 
 [project.urls]
-Development = "https://github.com/AGrigis/hopla"
-issues = "https://github.com/AGrigis/hopla/issues"
-homepage = "https://agrigis.github.io/hopla/stable/"
+Development = "https://github.com/brainprepdesk/hopla"
+issues = "https://github.com/brainprepdesk/hopla/issues"
+homepage = "https://brainprepdesk.github.io/hopla/stable/"
 
 [tool.setuptools]
 include-package-data = true
