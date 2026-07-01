@@ -53,7 +53,7 @@ jobs:
           echo "DEPLOY_TYPE=pr" >> $GITHUB_OUTPUT
         fi
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
     - name: Set up Python
