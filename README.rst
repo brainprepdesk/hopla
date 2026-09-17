@@ -1,7 +1,7 @@
 **Usage**
 
 .. image:: https://img.shields.io/badge/python-3.12-blue
-    :target: https://github.com/AGrigis/pysphinxdoc
+    :target: https://github.com/brainprepdesk/hopla
     :alt: Python Version
 
 .. image:: https://img.shields.io/badge/License-CeCILL--B-blue.svg

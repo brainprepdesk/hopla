@@ -73,8 +73,7 @@ extend-select = [
 
 ]
 ignore = [
-    "UP038", # Use `X | Y` in `isinstance` call instead of `(X, Y)`
-
+    "BLE001", # Do not catch blind exception: `Exception`
 ]
 
 [tool.ruff]

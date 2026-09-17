@@ -13,5 +13,5 @@ jobs automating code execution on clusters is convenient, but also essential
 for scalability, and efficiency.
 """
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 from .executor import DelayedSubmission, Executor
