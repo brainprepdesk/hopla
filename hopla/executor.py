@@ -217,8 +217,9 @@ class Executor:
         """ Display current status.
         """
         message = ["-" * 40]
-        message += [f"{self.__class__.__name__}<time="
-                    f"{time.time() - self._start}>"]
+        message += [
+            f"{self.__class__.__name__}<time={time.time() - self._start}>"
+        ]
         message += [f"- jobs: {self.n_jobs}"]
         message += [f"- done: {self.n_done_jobs}"]
         message += [f"- running: {self.n_running_jobs}"]

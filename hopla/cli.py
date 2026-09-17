@@ -63,7 +63,8 @@ def print_header(
 
     # Banner text
     banner = f"{BOLD}{MAGENTA}HOPLA{RESET} {BOLD}{CYAN}CLI{RESET}"
-    meta = f"{DIM}{datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}{RESET}"
+    now = datetime.datetime.now(tz=datetime.UTC)
+    meta = f"{DIM}{now.strftime('%Y-%m-%d %H:%M')}{RESET}"
 
     # Compose lines (truncate if needed)
     def clip(s): return (s[:max_content] + "…" if len(s) > max_content else s)
@@ -165,8 +166,7 @@ def main():
     on the configuration. It then runs the executor with a specified maximum
     number of jobs and writes a report to disk.
 
-    Workflow
-    --------
+    **Workflow**
     1. Parse CLI arguments using argparse.
     2. Load the TOML configuration file with `tomllib`.
     3. Initialize a `hopla.Executor` with environment parameters.
@@ -177,8 +177,7 @@ def main():
     5. Run the executor with the specified maximum number of jobs.
     6. Write a textual report to `report.txt` inside the executor's folder.
 
-    TOML Configuration
-    ------------------
+    **TOML Configuration**
     The configuration file is structured into sections:
 
     [project]
