@@ -11,11 +11,11 @@
 <meta property="og:image" content="https:/github.com.github.io/brainprepdesk/_static/hopla-logo.png" />
 <meta property="og:image:alt" content="hopla" />
 <meta name="description" content="CCC-based cluster - PBS When you’re running hundreds or thousands of jobs, automation is a necessity. This is where hopla can help you. A simple example of how to use hopla on a PBS cluster. Please..." />
-<link rel="search" title="Search" href="../search.html" /><link rel="next" title="Basic example on how to use the SLURM cluster" href="plot_slurm.html" /><link rel="prev" title="Basic example on how to use the CCC cluster using multi-tasks" href="plot_ccc_joblib_multi_tasks.html" />
+<link rel="search" title="Search" href="../search.html" /><link rel="next" title="Basic example on how to use the SLURM cluster" href="plot_slurm.html" /><link rel="prev" title="Basic example on how to use the CCC cluster using multi-tasks" href="plot_ccc_flux_multi_tasks.html" />
         <link rel="prefetch" href="../_static/hopla-transparent.png" as="image" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2025.07.19 -->
-        <title>Basic example on how to use the PBS cluster - hopla 2.0.0 documentation</title>
+        <title>Basic example on how to use the PBS cluster - hopla 2.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=2da93098" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -196,7 +196,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">hopla 2.0.0 documentation</div></a>
+      <a href="../index.html"><div class="brand">hopla 2.1.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -222,7 +222,7 @@
     <img class="sidebar-logo" src="../_static/hopla-transparent.png" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">hopla 2.0.0 documentation</span>
+  <span class="sidebar-brand-text">hopla 2.1.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -234,9 +234,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc.html">Basic example on how to use the CCC cluster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_ccc_joblib_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Basic example on how to use the PBS cluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_slurm.html">Basic example on how to use the SLURM cluster</a></li>
 </ul>
@@ -374,10 +374,10 @@ functionalities.</p>
 <section id="executor-context">
 <h2>Executor Context<a class="headerlink" href="#executor-context" title="Link to this heading">¶</a></h2>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../modules/generated/hopla.Executor.html#hopla.Executor" title="hopla.Executor" class="sphx-glr-backref-module-hopla sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">executor</span></a> <span class="o">=</span> <a href="../modules/generated/hopla.Executor.html#hopla.Executor" title="hopla.Executor" class="sphx-glr-backref-module-hopla sphx-glr-backref-type-py-class"><span class="n">hopla</span><span class="o">.</span><span class="n">Executor</span></a><span class="p">(</span>
-    <span class="n">cluster</span><span class="o">=</span><span class="s2">&quot;pbs&quot;</span><span class="p">,</span>
-    <span class="n">folder</span><span class="o">=</span><span class="s2">&quot;/tmp/hopla&quot;</span><span class="p">,</span>
-    <span class="n">queue</span><span class="o">=</span><span class="s2">&quot;Nspin_short&quot;</span><span class="p">,</span>
-    <span class="n">image</span><span class="o">=</span><span class="s2">&quot;/tmp/hopla/my-apptainer-img.simg&quot;</span><span class="p">,</span>
+    <span class="n">cluster</span><span class="o">=</span><span class="s2">"pbs"</span><span class="p">,</span>
+    <span class="n">folder</span><span class="o">=</span><span class="s2">"/tmp/hopla"</span><span class="p">,</span>
+    <span class="n">queue</span><span class="o">=</span><span class="s2">"Nspin_short"</span><span class="p">,</span>
+    <span class="n">image</span><span class="o">=</span><span class="s2">"/tmp/hopla/my-apptainer-img.simg"</span><span class="p">,</span>
     <span class="n">walltime</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span>
 </pre></div>
@@ -385,11 +385,11 @@ functionalities.</p>
 </section>
 <section id="submit-jobs">
 <h2>Submit Jobs<a class="headerlink" href="#submit-jobs" title="Link to this heading">¶</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a> <span class="o">=</span> <span class="p">[</span>
-    <a href="../modules/generated/hopla.Executor.html#hopla.Executor.submit" title="hopla.Executor.submit" class="sphx-glr-backref-module-hopla sphx-glr-backref-type-py-method"><span class="n">executor</span><span class="o">.</span><span class="n">submit</span></a><span class="p">(</span><span class="s2">&quot;sleep&quot;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a> <span class="o">=</span> <span class="p">[</span>
+    <a href="../modules/generated/hopla.Executor.html#hopla.Executor.submit" title="hopla.Executor.submit" class="sphx-glr-backref-module-hopla sphx-glr-backref-type-py-method"><span class="n">executor</span><span class="o">.</span><span class="n">submit</span></a><span class="p">(</span><span class="s2">"sleep"</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
 <span class="p">]</span>
-<a href="https://docs.python.org/3/library/pprint.html#pprint.pprint" title="pprint.pprint" class="sphx-glr-backref-module-pprint sphx-glr-backref-type-py-function"><span class="n">pprint</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delayed_submission</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/pprint.html#pprint.pprint" title="pprint.pprint" class="sphx-glr-backref-module-pprint sphx-glr-backref-type-py-function"><span class="n">pprint</span></a><span class="p">(</span><a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delayed_submission</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[DelayedPbsJob(
@@ -441,9 +441,9 @@ DelayedSubmission(
 </section>
 <section id="generate-a-batch">
 <h2>Generate a batch<a class="headerlink" href="#generate-a-batch" title="Link to this heading">¶</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">generate_batch</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">paths</span><span class="p">)</span>
-<a href="https://docs.python.org/3/library/pathlib.html#pathlib.PosixPath" title="pathlib.PosixPath" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">batch</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">paths</span><span class="o">.</span><span class="n">submission_file</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">generate_batch</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">paths</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/pathlib.html#pathlib.PosixPath" title="pathlib.PosixPath" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">batch</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/builtins/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">jobs</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">paths</span><span class="o">.</span><span class="n">submission_file</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><a href="https://docs.python.org/3/library/pathlib.html#pathlib.PosixPath" title="pathlib.PosixPath" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">batch</span></a><span class="p">)</span> <span class="k">as</span> <span class="n">of</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">of</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </pre></div>
@@ -477,7 +477,7 @@ echo $HOSTNAME
 
 # Command
 apptainer run  /tmp/hopla/my-apptainer-img.simg sleep 1
-echo &quot;HOPLASAY-DONE&quot;
+echo "HOPLASAY-DONE"
 </pre></div>
 </div>
 </section>
@@ -494,9 +494,9 @@ available.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>QSUB:   0%|          | 0/10 [00:00&lt;?, ?it/s][command] qsub /tmp/hopla/submissions/1_submission.sh
 
-QSUB:  10%|█         | 1/10 [00:00&lt;00:00, 1543.73it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
+QSUB:  10%|█         | 1/10 [00:00&lt;00:00, 1283.45it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
 
-QSUB:  20%|██        | 2/10 [00:00&lt;00:00, 1831.17it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
+QSUB:  20%|██        | 2/10 [00:00&lt;00:00, 1426.15it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
 
 QSUB:  30%|███       | 3/10 [00:03&lt;00:07,  1.00s/it]
 QSUB:  30%|███       | 3/10 [00:03&lt;00:07,  1.00s/it][command] qsub /tmp/hopla/submissions/4_submission.sh
@@ -570,8 +570,8 @@ DelayedPbsJob&lt;job_id=10&gt;stdout: none
 DelayedPbsJob&lt;job_id=10&gt;stderr: none
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.207 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  110 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.248 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  111 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-pbs-py">
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/aa11d4309713d5a4b1fc5fb9d5b7050d/plot_pbs.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_pbs.ipynb</span></code></a></p>
@@ -601,7 +601,7 @@ DelayedPbsJob&lt;job_id=10&gt;stderr: none
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="plot_ccc_joblib_multi_tasks.html">
+          <a class="prev-page" href="plot_ccc_flux_multi_tasks.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">

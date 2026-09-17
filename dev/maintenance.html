@@ -15,7 +15,7 @@
         <link rel="prefetch" href="_static/hopla-transparent.png" as="image" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2025.07.19 -->
-        <title>Maintenance - hopla 2.0.0 documentation</title>
+        <title>Maintenance - hopla 2.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=2da93098" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -196,7 +196,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">hopla 2.0.0 documentation</div></a>
+      <a href="index.html"><div class="brand">hopla 2.1.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -222,7 +222,7 @@
     <img class="sidebar-logo" src="_static/hopla-transparent.png" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">hopla 2.0.0 documentation</span>
+  <span class="sidebar-brand-text">hopla 2.1.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -234,9 +234,9 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="auto_examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc.html">Basic example on how to use the CCC cluster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc_joblib_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc_oneshot_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_ccc_flux_multi_tasks.html">Basic example on how to use the CCC cluster using multi-tasks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_pbs.html">Basic example on how to use the PBS cluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/plot_slurm.html">Basic example on how to use the SLURM cluster</a></li>
 </ul>
@@ -461,7 +461,7 @@ when, say, a new parameter is added or deprecated.</p>
 <p>For example, if a parameter <code class="docutils literal notranslate"><span class="pre">param2</span></code> was added in version <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code>,
 the docstring should be updated to:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    param1 : type</span>
@@ -476,7 +476,7 @@ the docstring should be updated to:</p>
 <span class="sd">    -------</span>
 <span class="sd">    output : type</span>
 <span class="sd">        Description of the output.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="o">...</span>
 </pre></div>
 </div>
@@ -539,7 +539,7 @@ Finally, we need to change the title from <code class="docutils literal notransl
 <a class="reference internal" href="whats_new.html#changelog"><span class="std std-ref">Changelog</span></a> section).</p>
 <p>Add these changes and submit a PR:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>doc/changes/
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;REL x.y.z&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"REL x.y.z"</span>
 git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>REL-x.y.z
 </pre></div>
 </div>
