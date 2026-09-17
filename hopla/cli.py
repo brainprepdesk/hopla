@@ -166,57 +166,63 @@ def main():
     on the configuration. It then runs the executor with a specified maximum
     number of jobs and writes a report to disk.
 
-    **Workflow**
+    Workflow
+    ~~~~~~~~
     1. Parse CLI arguments using argparse.
     2. Load the TOML configuration file with `tomllib`.
     3. Initialize a `hopla.Executor` with environment parameters.
     4. Extract commands from the configuration:
+
        - If `multi` is defined, split commands into chunks and submit them
          as delayed submissions.
        - Otherwise, submit commands directly.
+
     5. Run the executor with the specified maximum number of jobs.
     6. Write a textual report to `report.txt` inside the executor's folder.
 
-    **TOML Configuration**
+    TOML Configuration
+    ~~~~~~~~~~~~~~~~~~
     The configuration file is structured into sections:
 
-    [project]
-    name : str
-        Name of the project.
-    operator : str
-        Person responsible for running the analysis.
-    date : str
-        Date of the experiment in DD/MM/YYYY format.
+    .. code-block:: toml
 
-    [inputs]
-    commands : str or list
-        Commands to execute. Can be a Python expression string (e.g.,
-        "sleep {k}") or a list of commands.
-    parameters : str
-        Additional parameters passed to the container execution command
-        (e.g., "--cleanenv").
+        [project]
+        # Name of the project.
+        name = "str"
+        # Person responsible for running the analysis.
+        operator = "str"
+        # Date of the experiment in DD/MM/YYYY format.
+        date = "str"
 
-    [environment]
-    cluster : str
-        Cluster type (e.g., "pbs").
-    folder : str
-        Working directory for job execution (e.g., "/tmp/hopla").
-    queue : str
-        Queue or partition name (e.g., "Nspin_short").
-    walltime : int
-        Maximum walltime in hours for each job.
-    n_cpus : int
-        Number of CPUs allocated per job.
-    image : str
-        Path to container image used for execution.
+        [inputs]
+        # Commands to execute. Can be a Python expression string (e.g.,
+        # "sleep {k}") or a list of commands.
+        commands = "str or list"
+        # Additional parameters passed to the container execution command
+        # (e.g., "--cleanenv").
+        parameters = "str"
 
-    [config]
-    dryrun : bool
-        If true, simulate job submission without executing.
-    delay_s : int
-        Delay in seconds between submissions.
-    verbose : bool
-        If true, enable verbose logging.
+        [environment]
+        # Cluster type (e.g., "pbs").
+        cluster = "str"
+        # Working directory for job execution (e.g., "/tmp/hopla").
+        folder = "str"
+        # Queue or partition name (e.g., "Nspin_short").
+        queue = "str"
+        # Maximum walltime in hours for each job.
+        walltime = "int"
+        # Number of CPUs allocated per job.
+        n_cpus = "int"
+        # Path to container image used for execution.
+        image = "str"
+
+        [config]
+        # If true, simulate job submission without executing.
+        dryrun = "bool"
+        # Delay in seconds between submissions.
+        delay_s = "int"
+        # If true, enable verbose logging.
+        verbose = "bool"
 
     Examples
     --------
