@@ -236,16 +236,16 @@ available.
  .. code-block:: none
 
     QSUB:   0%|          | 0/10 [00:00<?, ?it/s][command] qsub /tmp/hopla/submissions/1_submission.sh
-    QSUB:  10%|█         | 1/10 [00:00<00:00, 1283.45it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
-    QSUB:  20%|██        | 2/10 [00:00<00:00, 1426.15it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
-    QSUB:  30%|███       | 3/10 [00:03<00:07,  1.00s/it]      QSUB:  30%|███       | 3/10 [00:03<00:07,  1.00s/it][command] qsub /tmp/hopla/submissions/4_submission.sh
-    QSUB:  40%|████      | 4/10 [00:03<00:06,  1.00s/it][command] qsub /tmp/hopla/submissions/5_submission.sh
-    QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.24s/it]    QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.24s/it][command] qsub /tmp/hopla/submissions/6_submission.sh
-    QSUB:  60%|██████    | 6/10 [00:06<00:04,  1.24s/it][command] qsub /tmp/hopla/submissions/7_submission.sh
-    QSUB:  70%|███████   | 7/10 [00:09<00:04,  1.35s/it]    QSUB:  70%|███████   | 7/10 [00:09<00:04,  1.35s/it][command] qsub /tmp/hopla/submissions/8_submission.sh
-    QSUB:  80%|████████  | 8/10 [00:09<00:02,  1.35s/it][command] qsub /tmp/hopla/submissions/9_submission.sh
-    QSUB:  90%|█████████ | 9/10 [00:12<00:01,  1.41s/it]    QSUB:  90%|█████████ | 9/10 [00:12<00:01,  1.41s/it][command] qsub /tmp/hopla/submissions/10_submission.sh
-    QSUB: 100%|██████████| 10/10 [00:12<00:00,  1.41s/it]    QSUB: 100%|██████████| 10/10 [00:15<00:00,  1.50s/it]
+    QSUB:  10%|█         | 1/10 [00:00<00:00,  9.44it/s]    QSUB:  10%|█         | 1/10 [00:00<00:00,  9.44it/s][command] qsub /tmp/hopla/submissions/2_submission.sh
+    QSUB:  20%|██        | 2/10 [00:00<00:00,  9.44it/s][command] qsub /tmp/hopla/submissions/3_submission.sh
+    QSUB:  30%|███       | 3/10 [00:03<00:08,  1.15s/it]    QSUB:  30%|███       | 3/10 [00:03<00:08,  1.15s/it][command] qsub /tmp/hopla/submissions/4_submission.sh
+    QSUB:  40%|████      | 4/10 [00:03<00:06,  1.15s/it][command] qsub /tmp/hopla/submissions/5_submission.sh
+    QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.33s/it]    QSUB:  50%|█████     | 5/10 [00:06<00:06,  1.33s/it][command] qsub /tmp/hopla/submissions/6_submission.sh
+    QSUB:  60%|██████    | 6/10 [00:06<00:05,  1.33s/it][command] qsub /tmp/hopla/submissions/7_submission.sh
+    QSUB:  70%|███████   | 7/10 [00:09<00:04,  1.40s/it]    QSUB:  70%|███████   | 7/10 [00:09<00:04,  1.40s/it][command] qsub /tmp/hopla/submissions/8_submission.sh
+    QSUB:  80%|████████  | 8/10 [00:09<00:02,  1.40s/it][command] qsub /tmp/hopla/submissions/9_submission.sh
+    QSUB:  90%|█████████ | 9/10 [00:12<00:01,  1.44s/it]    QSUB:  90%|█████████ | 9/10 [00:12<00:01,  1.44s/it][command] qsub /tmp/hopla/submissions/10_submission.sh
+    QSUB: 100%|██████████| 10/10 [00:12<00:00,  1.44s/it]    QSUB: 100%|██████████| 10/10 [00:15<00:00,  1.51s/it]
     ----------------------------------------
     DelayedPbsJob<job_id=1>exitcode: failure
     DelayedPbsJob<job_id=1>submission: /tmp/hopla/submissions/1_submission.sh
@@ -303,7 +303,7 @@ available.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.248 seconds)
+   **Total running time of the script:** (0 minutes 15.339 seconds)
 
 **Estimated memory usage:**  111 MB
 

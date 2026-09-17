@@ -359,12 +359,71 @@ function signature, and not how to use it. Please refer to the
 <h1>hopla.cli.main<a class="headerlink" href="#hopla-cli-main" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="hopla.cli.main">
-<span class="sig-prename descclassname"><span class="pre">hopla.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/63fdb21/hopla/cli.py#L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.cli.main" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">hopla.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/brainprepdesk/hopla/blob/31f1543/hopla/cli.py#L160"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hopla.cli.main" title="Link to this definition">¶</a></dt>
 <dd><p>Command-line interface for automated job execution with hopla.</p>
 <p>This function loads a TOML configuration file, initializes a hopla
 executor, and submits jobs either individually or in chunks depending
 on the configuration. It then runs the executor with a specified maximum
 number of jobs and writes a report to disk.</p>
+<section id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Parse CLI arguments using argparse.</p></li>
+<li><p>Load the TOML configuration file with <cite>tomllib</cite>.</p></li>
+<li><p>Initialize a <cite>hopla.Executor</cite> with environment parameters.</p></li>
+<li><p>Extract commands from the configuration:</p>
+<ul class="simple">
+<li><p>If <cite>multi</cite> is defined, split commands into chunks and submit them
+as delayed submissions.</p></li>
+<li><p>Otherwise, submit commands directly.</p></li>
+</ul>
+</li>
+<li><p>Run the executor with the specified maximum number of jobs.</p></li>
+<li><p>Write a textual report to <cite>report.txt</cite> inside the executor’s folder.</p></li>
+</ol>
+</section>
+<section id="toml-configuration">
+<h2>TOML Configuration<a class="headerlink" href="#toml-configuration" title="Link to this heading">¶</a></h2>
+<p>The configuration file is structured into sections:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[project]</span>
+<span class="c1"># Name of the project.</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+<span class="c1"># Person responsible for running the analysis.</span>
+<span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+<span class="c1"># Date of the experiment in DD/MM/YYYY format.</span>
+<span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+
+<span class="k">[inputs]</span>
+<span class="c1"># Commands to execute. Can be a Python expression string (e.g.,</span>
+<span class="c1"># "sleep {k}") or a list of commands.</span>
+<span class="n">commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str or list"</span>
+<span class="c1"># Additional parameters passed to the container execution command</span>
+<span class="c1"># (e.g., "--cleanenv").</span>
+<span class="n">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+
+<span class="k">[environment]</span>
+<span class="c1"># Cluster type (e.g., "pbs").</span>
+<span class="n">cluster</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+<span class="c1"># Working directory for job execution (e.g., "/tmp/hopla").</span>
+<span class="n">folder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+<span class="c1"># Queue or partition name (e.g., "Nspin_short").</span>
+<span class="n">queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+<span class="c1"># Maximum walltime in hours for each job.</span>
+<span class="n">walltime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"int"</span>
+<span class="c1"># Number of CPUs allocated per job.</span>
+<span class="n">n_cpus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"int"</span>
+<span class="c1"># Path to container image used for execution.</span>
+<span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"str"</span>
+
+<span class="k">[config]</span>
+<span class="c1"># If true, simulate job submission without executing.</span>
+<span class="n">dryrun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bool"</span>
+<span class="c1"># Delay in seconds between submissions.</span>
+<span class="n">delay_s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"int"</span>
+<span class="c1"># If true, enable verbose logging.</span>
+<span class="n">verbose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bool"</span>
+</pre></div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -383,6 +442,7 @@ during execution.</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hoplactl</span> <span class="o">--</span><span class="n">config</span> <span class="n">experiment</span><span class="o">.</span><span class="n">toml</span> <span class="o">--</span><span class="n">njobs</span> <span class="mi">5</span> 
 </pre></div>
 </div>
+</section>
 </dd></dl>
 
 <div style='clear:both'></div></section>
