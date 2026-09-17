@@ -9,6 +9,7 @@
 import argparse
 import datetime
 import re
+import shlex
 import shutil
 
 try:
@@ -295,9 +296,7 @@ def main():
         **config["environment"]
     )
     if args.venv:
-        executor._job_class._container_cmd = (
-            "{command}"
-        )
+        executor._job_class._container_cmd = "{command}"
 
     commands = config["inputs"]["commands"]
     if not isinstance(commands, (list, tuple)):
@@ -311,8 +310,7 @@ def main():
             )
         df = pd.read_csv(data_file, sep="\t")
         commands = [
-            commands.format(**dict(row)).split(" ")
-            for _, row in df.iterrows()
+            shlex.split(commands.format(**dict(row))) for _, row in df.iterrows()
         ]
 
     if config.get("multi") is not None:
